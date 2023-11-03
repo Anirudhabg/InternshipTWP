@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Texturina:opsz,wght@12..72,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form id="survey-form">
+      <h1 id="title">Mental health Survey Form</h1>
+      <p id="description">
+        Mental health is an essential aspect of overall well-being that includes
+        emotional, psychological, and social well-being. It affects how we
+        think, feel, and act, and helps determine how we handle stress, relate
+        to others, and make healthy choices. This form can provide valuable
+        information about a person's mental health status, including any mental
+        health disorders they may have, their lifestyle and well-being, and
+        their access to mental health services. Please fill the form with
+        required information
+      </p>
+      <label for="name" id="name-label"
+        >Name:
+        <input
+          type="text"
+          name="name-label"
+          id="name"
+          required
+          placeholder="Ex: John Smith"
+        />
+      </label>
+      <label for="email" id="email-label"
+        >Email:
+        <input
+          type="email"
+          name="email-label"
+          id="email"
+          required
+          placeholder="Ex: johnSmith12@gmail.com"
+        />
+      </label>
+      <label for="age" id="number-label"
+        >Age:
+        <input
+          type="number"
+          name="number-label"
+          id="number"
+          min="15"
+          max="100"
+          placeholder="13"
+        />
+      </label>
+
+      <label for="education" class="education"
+        >Education:
+        <select name="education" id="dropdown">
+          <option value=""><strong>(select education)</strong></option>
+          <option value="1">SSLC</option>
+          <option value="2">PUC</option>
+          <option value="3">UG</option>
+          <option value="4">PG</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <label>Gender:</label>
+        <label for="male"
+          ><input
+            id="male"
+            type="radio"
+            name="gender-type"
+            class="inline rradio"
+            value="male"
+            checked
+          />
+          Male</label
+        >
+        <label for="female"
+          ><input
+            id="female"
+            type="radio"
+            name="gender-type"
+            class="inline rradio"
+            value="female"
+          />
+          Female</label
+        >
+        <label for="female"
+          ><input
+            id="other"
+            type="radio"
+            name="gender-type"
+            class="inline rradio"
+            value="other"
+          />
+          Other</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="condition">Specific Mental Health Conditions</label>
+        <label for="anxiety">
+          <input type="checkbox" class="inline" value="anxiety" />Anxiety</label
+        >
+        <label for="depression">
+          <input
+            type="checkbox"
+            class="inline"
+            value="depression"
+          />Depression</label
+        >
+        <label for="bipolar-disorder">
+          <input
+            type="checkbox"
+            class="inline"
+            value="bipolar-disorder"
+          />Bipolar disorder</label
+        ><label for="schizophrenia">
+          <input
+            type="checkbox"
+            class="inline"
+            value="schizophrenia"
+          />Schizophrenia</label
+        >
+        <label for="ptsd">
+          <input type="checkbox" class="inline" value="ptsd" />PTSD</label
+        >
+        <label for="scale"
+          >On a scale from 1-10, 10 being the worst, how painful or bad are the
+          conditions? <input type="number" min="1" max="10"
+        /></label>
+      </fieldset>
+      <label for="bio">Tell us more about what you feel</label>
+      <textarea
+        name="bio"
+        id="bio"
+        cols="30"
+        rows="5"
+        placeholder="Ex: I feel like an empty soul"
+      ></textarea>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
