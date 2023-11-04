@@ -9,19 +9,37 @@
     padding: 10px 10%;
 }
 
-.subtext{
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 1.4rem;
-    /* letter-spacing: 0.4rem; */
-    line-height: 1.9rem;
+#description{
+  padding: 80px 0;
+  color: rgb(0, 0, 0);
 }
-.subtext span{
-    line-height: 2.1rem;
-    font-size: 1.6rem;
-    font-weight: 700;
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col-2 {
+  flex-basis: 40%;
+  overflow: hidden;
+}
+.col-2 iframe {
+  width: 100%;
+  border-radius: 15px;
 }
 
+.col-1 {
+  flex-basis: 55%;
+}
+
+.col-1 p{
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 30px;
+}
+
+span{
+  font-weight: 800;
+}
 /* Product Page */
 
 .products{
@@ -60,7 +78,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
-    text-align: center;
+    text-align: justify;
     font-size: 1.1rem;
     transition: height 0.5s;
   }
@@ -98,7 +116,7 @@
   
   #submit {
     background-color: #4CAF50;
-    color: white;
+    color: #fff;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -108,7 +126,7 @@
   }
   
   #submit:hover {
-    background-color: #45a049;
+    background-color: #115715;
   }
   .description{
     padding-bottom: 13px;
@@ -116,12 +134,12 @@
 
   /* iframe  */
  
-#video {
+.left {
+  flex-basis: 40%;
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    border: 2px solid black;
-    box-shadow: 10px 10px 20px  #4e4545;
+    /* box-shadow: 10px 10px 20px  #4e4545; */
     border-radius: 15px;
   }
   
@@ -130,6 +148,7 @@
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
+    /* border: 2px solid black; */
     /* transform: scale(0); */
   }
  
@@ -145,7 +164,7 @@
 #nav-bar {
     background-color: #333;
     overflow: hidden;
-    padding: 10px;
+    padding: 8px;
   }
   
   #nav-bar li {
@@ -154,11 +173,14 @@
   }
   
   #nav-bar li:hover {
-    background-color: #ddd;
+    /* color: #000; */
+    background-color: #575555;
+    border-radius: 15px;
+    /* box-shadow: 2px 2px 5px #c7bcbc; */
   }
   
   #nav-bar a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     padding: 10px;
   }
@@ -172,18 +194,22 @@
     margin: 0 auto;
     max-width: 100%;
     width: 100px;
+    /* padding: -15px; */
     /* height: 100px; */
     /* height: 100vh; */
     position: absolute;
-    top: 0;
+    top: 3;
     /* bottom: 27px; */
     left: 1350px;
     /* overflow: hidden; */
 
   }
 
-  @media only screen and (max-width:600px){
+  @media only screen and (max-width:420){
     #nav-bar{
         display: none;
+    }
+    .layer{
+      font-size: 0.7rem;
     }
   }
